@@ -1,4 +1,8 @@
-# Foocha — concept de redesign (v2)
+# Foocha — concept de redesign
+
+**En ligne :**
+- v2, style BTC : https://mathieuherbos.github.io/foocha-concept/
+- hybride (v1 x v2) : https://mathieuherbos.github.io/foocha-concept/hybrid.html
 
 Prototype statique (HTML/CSS/JS, aucune dépendance) qui transpose le système
 de design de [bigtroubleinchinatown.com](https://bigtroubleinchinatown.com/)
@@ -64,13 +68,29 @@ python3 -m http.server 8000
 
 puis aller sur `http://localhost:8000`.
 
+## Deux versions sur ce repo
+
+- **`index.html`** (v2) : transposition fidèle du système BTC décrit ci-dessus
+  — fond plein par section, boutons double-anneau, encadré double filet,
+  hero jour/nuit néon, pas de nav classique (burger off-canvas)
+- **`hybrid.html`** (v3) : structure plus proche de la v1 (nav visible,
+  photos au premier plan), même typographie/composants que la v2, mais
+  dans la vraie identité Foocha (menthe `#9cd6c0` + noir, pas le système
+  multi-teintes de BTC) et avec 6 vrais plats + vrais prix affichés
+  directement sur la page plutôt que renvoyés dans la lightbox
+
+Les deux pages se renvoient l'une à l'autre via le bandeau du haut.
+
 ## Fichiers
 
 ```
 index.html
-css/tokens.css
-css/styles.css
-js/main.js
+hybrid.html
+css/tokens.css      (partagé)
+css/styles.css      (v2)
+css/hybrid.css      (v3)
+js/main.js           (v2)
+js/hybrid.js         (v3)
 assets/logo.png
 assets/dishes/*.jpg     (photos originales de foocha.be)
 assets/menu/*.webp,jpg  (vraies pages du menu foocha.be, pour la lightbox)
