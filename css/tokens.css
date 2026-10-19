@@ -25,6 +25,14 @@ html {
   --c-bronze-light:#c9a66b; /* bronze éclairci : lisible sur --c-ink / --c-blood */
   --c-neon-green: #1fc24a;
 
+  /* ---- vraie identité Foocha (échantillonnée sur leurs propres visuels
+     menu / Instagram : menthe #9cd6c0 + noir sur fond ivoire) — utilisée
+     pour recolorer le footer dans le thème de Foocha plutôt que celui
+     emprunté à BTC */
+  --c-mint:       #9cd6c0;
+  --c-mint-deep:  #2f6650; /* menthe assombrie : 5.7:1 sur --c-cream (AA texte) */
+  --c-mint-pale:  #e3f3ec;
+
   /* ---- typographies ----
      Remplacement libre : Albertus Nova -> Fraunces (seule famille Google Fonts
      couvrant 300/400/700/900 avec un vrai caractère glyphique/gravé ; Marcellus

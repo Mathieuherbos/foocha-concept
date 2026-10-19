@@ -455,7 +455,10 @@ body.offcanvas-open { overflow: hidden; }
    Footer — emblème
    ========================================================================== */
 
-.site-footer { background: var(--c-cream); color: var(--c-jade); }
+/* recolorée dans la vraie identité Foocha (menthe #9cd6c0 + noir sur ivoire,
+   échantillonnée sur leurs propres menus) plutôt que le rouge néon / encre
+   empruntés à BTC pour le reste du site */
+.site-footer { background: var(--c-cream); color: var(--c-mint-deep); }
 .footer-top { padding-block: clamp(4rem, 8vw, 7rem) 3rem; text-align: center; }
 .footer-emblem { width: 9rem; height: 9rem; margin-inline: auto 1.6rem auto; }
 .footer-emblem svg { width: 100%; height: 100%; }
@@ -463,22 +466,23 @@ body.offcanvas-open { overflow: hidden; }
   font-family: var(--font-display);
   font-weight: 700;
   font-size: var(--size-footer-address);
-  color: var(--c-neon-red);
+  color: var(--c-ink);
   line-height: 1.5;
 }
-.footer-address a { text-decoration: underline; text-underline-offset: 4px; }
+.footer-address a { text-decoration: underline; text-underline-offset: 4px; text-decoration-color: var(--c-mint); }
 .footer-social { display: flex; justify-content: center; gap: 1rem; margin-top: 2rem; }
 .footer-social a {
   width: 4.4rem; height: 4.4rem; border-radius: 50%;
-  background: var(--c-sky-soft);
+  background: var(--c-mint-pale);
+  color: var(--c-mint-deep);
   display: flex; align-items: center; justify-content: center;
-  transition: background .2s ease;
+  transition: background .2s ease, color .2s ease;
 }
-.footer-social a:hover { background: var(--c-bronze); color: var(--c-cream); }
+.footer-social a:hover { background: var(--c-mint); color: var(--c-ink); }
 .footer-social svg { width: 1.8rem; height: 1.8rem; fill: currentColor; }
 
 .footer-bottom {
-  background: var(--c-ink);
+  background: var(--c-mint-deep);
   color: var(--c-cream);
   font-family: var(--font-ui);
   font-size: var(--size-footer-legal);
