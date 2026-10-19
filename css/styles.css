@@ -328,9 +328,21 @@ body.offcanvas-open { overflow: hidden; }
    Photo plein écran + sceaux
    ========================================================================== */
 
-.showcase { padding: 0; min-height: 90svh; }
-.showcase__media { position: relative; width: 100%; height: 90svh; }
-.showcase__media img { width: 100%; height: 100%; object-fit: cover; }
+.showcase {
+  padding: 0;
+  min-height: 100svh;
+  background-image: url("../assets/dishes/fried-chicken-orange.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: block; /* annule align-items/justify-content de .section : les sceaux gardent leur position absolue propre */
+}
+/* background-attachment:fixed est ignoré par mobile Safari (dégrade
+   proprement en scroll normal) ; on le désactive explicitement sur mobile
+   pour éviter les soucis de repaint connus pendant le scroll inertiel */
+@media (max-width: 768px), (prefers-reduced-motion: reduce) {
+  .showcase { background-attachment: scroll; }
+}
 .showcase__seal {
   position: absolute;
   width: clamp(9rem, 12vw, 15rem);

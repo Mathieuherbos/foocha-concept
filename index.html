@@ -79,32 +79,32 @@
     </div>
   </section>
 
-  <!-- 4. PHOTO PLEIN ÉCRAN + SCEAUX -->
+  <!-- 4. PHOTO PLEIN ÉCRAN + SCEAUX — image en fond CSS fixe (même mécanisme
+       que bigtroubleinchinatown.com : background-attachment:fixed sur la
+       section, les sceaux restent des enfants en flux normal) -->
   <section class="section showcase">
-    <div class="showcase__media">
-      <img src="assets/dishes/fried-chicken-orange.jpg" alt="Bowl of glazed Korean fried chicken with sesame seeds and spring onion, on an orange background">
-      <div class="showcase__seal showcase__seal--1" data-reveal data-delay="0" data-duration="800" aria-hidden="true">
-        <svg viewBox="0 0 200 200">
-          <circle cx="100" cy="100" r="92" fill="none" stroke="#f5ebe1" stroke-width="3"/>
-          <circle cx="100" cy="100" r="80" fill="none" stroke="#f5ebe1" stroke-width="1"/>
-          <path id="sealPathA" d="M 100 100 m -62 0 a 62 62 0 1 1 124 0 a 62 62 0 1 1 -124 0" fill="none"/>
-          <text font-family="Archivo, sans-serif" font-weight="700" font-size="12.5" letter-spacing="3" fill="#f5ebe1">
-            <textPath href="#sealPathA" startOffset="2%">HOME MADE • NOTHING FROZEN •</textPath>
-          </text>
-          <text x="100" y="106" text-anchor="middle" font-family="Fraunces, serif" font-weight="900" font-size="26" fill="#f5ebe1">食</text>
-        </svg>
-      </div>
-      <div class="showcase__seal showcase__seal--2" data-reveal data-delay="250" data-duration="800" aria-hidden="true">
-        <svg viewBox="0 0 200 200">
-          <circle cx="100" cy="100" r="92" fill="none" stroke="#f5ebe1" stroke-width="3"/>
-          <circle cx="100" cy="100" r="80" fill="none" stroke="#f5ebe1" stroke-width="1"/>
-          <path id="sealPathB" d="M 100 100 m -62 0 a 62 62 0 1 1 124 0 a 62 62 0 1 1 -124 0" fill="none"/>
-          <text font-family="Archivo, sans-serif" font-weight="700" font-size="12.5" letter-spacing="3" fill="#f5ebe1">
-            <textPath href="#sealPathB" startOffset="2%">RUE DE FLANDRE 17 • BRUXELLES •</textPath>
-          </text>
-          <text x="100" y="106" text-anchor="middle" font-family="Fraunces, serif" font-weight="900" font-size="26" fill="#f5ebe1">茶</text>
-        </svg>
-      </div>
+    <span class="visually-hidden">Bowl of glazed Korean fried chicken with sesame seeds and spring onion, on an orange background</span>
+    <div class="showcase__seal showcase__seal--1" data-reveal data-delay="0" data-duration="800" aria-hidden="true">
+      <svg viewBox="0 0 200 200">
+        <circle cx="100" cy="100" r="92" fill="none" stroke="#f5ebe1" stroke-width="3"/>
+        <circle cx="100" cy="100" r="80" fill="none" stroke="#f5ebe1" stroke-width="1"/>
+        <path id="sealPathA" d="M 100 100 m -62 0 a 62 62 0 1 1 124 0 a 62 62 0 1 1 -124 0" fill="none"/>
+        <text font-family="Archivo, sans-serif" font-weight="700" font-size="12.5" letter-spacing="3" fill="#f5ebe1">
+          <textPath href="#sealPathA" startOffset="2%">HOME MADE • NOTHING FROZEN •</textPath>
+        </text>
+        <text x="100" y="106" text-anchor="middle" font-family="Fraunces, serif" font-weight="900" font-size="26" fill="#f5ebe1">食</text>
+      </svg>
+    </div>
+    <div class="showcase__seal showcase__seal--2" data-reveal data-delay="250" data-duration="800" aria-hidden="true">
+      <svg viewBox="0 0 200 200">
+        <circle cx="100" cy="100" r="92" fill="none" stroke="#f5ebe1" stroke-width="3"/>
+        <circle cx="100" cy="100" r="80" fill="none" stroke="#f5ebe1" stroke-width="1"/>
+        <path id="sealPathB" d="M 100 100 m -62 0 a 62 62 0 1 1 124 0 a 62 62 0 1 1 -124 0" fill="none"/>
+        <text font-family="Archivo, sans-serif" font-weight="700" font-size="12.5" letter-spacing="3" fill="#f5ebe1">
+          <textPath href="#sealPathB" startOffset="2%">RUE DE FLANDRE 17 • BRUXELLES •</textPath>
+        </text>
+        <text x="100" y="106" text-anchor="middle" font-family="Fraunces, serif" font-weight="900" font-size="26" fill="#f5ebe1">茶</text>
+      </svg>
     </div>
   </section>
 
