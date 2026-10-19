@@ -1,0 +1,51 @@
+/* ==========================================================================
+   Foocha — design tokens
+   Transposés depuis l'analyse de bigtroubleinchinatown.com (palette, échelle,
+   rythme). Aucun asset de marque copié — uniquement les mécanismes.
+   ========================================================================== */
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+:root {
+  /* ---- palette : une couleur de fond pleine par section ---- */
+  --c-black:      #000000;
+  --c-ink:        #1e1419;
+  --c-cream:      #f5ebe1;
+  --c-jade:       #285a32;
+  --c-blood:      #960000;
+  --c-neon-red:   #f00a00;
+  --c-sky:        #b9e0f8;
+  --c-sky-soft:   #e8f5fd;
+  --c-azure:      #008ce6;
+  --c-azure-text: #0a5a8f; /* azure assombri : >4.5:1 sur --c-sky et --c-sky-soft (AA) */
+  --c-bronze:     #9c7f5f;
+  --c-bronze-text:#6e5940; /* bronze assombri : >4.5:1 sur --c-cream (AA) */
+  --c-bronze-light:#c9a66b; /* bronze éclairci : lisible sur --c-ink / --c-blood */
+  --c-neon-green: #1fc24a;
+
+  /* ---- typographies ----
+     Remplacement libre : Albertus Nova -> Fraunces (seule famille Google Fonts
+     couvrant 300/400/700/900 avec un vrai caractère glyphique/gravé ; Marcellus
+     n'existe qu'en 400 et ne tient pas la casse majuscule lourde du H2).
+     Helvetica Now -> Archivo. Sarina -> Sarina (libre, Google Fonts). */
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --font-ui: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-script: "Sarina", cursive;
+
+  /* ---- échelle (relevée à 1470px, cf. brief) ---- */
+  --size-h2: clamp(3.6rem, 4.3vw, 7.2rem);
+  --size-kicker: clamp(1.6rem, 1.9vw, 3.2rem); /* ~45% du H2 */
+  --size-body: clamp(1.8rem, 1.82vw, 2.8rem);
+  --size-btn: 1.8rem;
+  --size-faq-q: 1.6rem;
+  --size-footer-address: clamp(2.2rem, 2.6vw, 3rem);
+  --size-footer-legal: 1.3rem;
+
+  --container: 124rem;
+  --radius-pill: 100px;
+  --radius-md: 1.5rem;
+
+  --ease: cubic-bezier(.4,0,.2,1);
+}
